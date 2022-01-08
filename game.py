@@ -10,7 +10,7 @@ class Puissance4:
 
     def get_index(self, row, column):
         """
-        Method for get index with row and column number.
+        Method to get index with row and column number.
         Args:
             row (int): row number (start at 0).
             column (int): column number (start at 0).
@@ -23,7 +23,7 @@ class Puissance4:
 
     def put_pawn(self, column, color):
         """
-        Method for put a pawn in the game's grid.
+        Method to put a pawn in the game's grid.
         Args:
             column (int): column number (start at 0).
             color (int): player's number.
@@ -58,7 +58,7 @@ class Puissance4:
 
     def print_grid(self):
         """
-        Method for clear stdout and print the game's grid in the stdout.
+        Method to clear stdout and print the game's grid in the stdout.
         """
         os.system("clear")
         for row in range(self.height):
@@ -66,7 +66,7 @@ class Puissance4:
 
     def get_pawn(self, row, column):
         """
-        Method for get a pawn's value in the grid.
+        Method to get a pawn's value in the grid.
         Args:
             row (int): row number (start at 0).
             column (int): column number (start at 0).
@@ -78,7 +78,7 @@ class Puissance4:
 
     def get_lines(self, row, column):
         """
-        Method for get vertical, horizontal, left diagonal and right diagonal
+        Method to get vertical, horizontal, left diagonal and right diagonal
         line with 3 range from row, column.
 
         Args:
@@ -109,7 +109,7 @@ class Puissance4:
     @staticmethod
     def check_line(line, color):
         """
-        Staticmethod for verify if there are 4 pawns a row with the same color in the line.
+        Staticmethod to verify if there are 4 pawns a row with the same color in the line.
 
         Args:
             line (list): pawn's list.
@@ -131,7 +131,7 @@ class Puissance4:
 
     def check_win(self, row, column, color):
         """
-        Method for verify is there is a winner when a pawn has been put in the grid.
+        Method to verify is there is a winner when a pawn has been put in the grid.
         Args:
             row (int): row number (start at 0).
             column (int): column number (start at 0).
@@ -148,7 +148,7 @@ class Puissance4:
         return False
 
     def is_in_grid(self, row, column):
-        """Method for verify if a position is in the grid.
+        """Method to verify if a position is in the grid.
 
         Returns:
             True: if the position is inside the grid.
